@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="40dp"
+        android:background="@color/purple"
+        android:paddingEnd="40dp">
+
+
+        <ImageView
+            android:id="@+id/image_all"
+            android:layout_width="40dp"
+            android:contentDescription="@string/random_icon"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            app:tint="@color/dark_purple"/>
+
+        <ImageView
+            android:id="@+id/image_happy"
+            android:layout_width="40dp"
+            android:contentDescription="@string/happy_icon"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_mood_24"
+            app:tint="@color/dark_purple"/>
+
+        <ImageView
+            android:id="@+id/image_light"
+            android:layout_width="40dp"
+            android:contentDescription="@string/light_icon"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_light_mode_24"
+            app:tint="@color/dark_purple"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_header"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/cabin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_kotlin"
+        tools:targetApi="p" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_motivation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Não sabendo que era impossível, foi lá e fez."
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_motivation"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:layout_height="5dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_width="wrap_content"
+        android:text="@string/new_phrase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/cabin"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
